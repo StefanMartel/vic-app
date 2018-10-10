@@ -1,0 +1,16 @@
+@import "../../../../assets/styles/global-styles";
+
+
+button[type="submit"]{
+	margin-top: 15px;
+	background-color: $button-background-color;
+	color: $button-text-color;
+	width:100%;
+	line-height: 20px;
+}
+
+
+
+.label {
+    white-space: nowrap; // keep nowrap to avoid wraping during transitions
+}

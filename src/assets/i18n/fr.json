@@ -1,0 +1,9 @@
+{
+  "login-input-name": "Nom",
+  "login-input-password": "Mot de passe",
+  "login-button-submit": "Valider",
+  "login-button-submit-error": "Accés refusé",
+  "login-button-submit-valid": "Connecté",
+  "login-input-name-error-required":"Nom obligatoire",
+  "login-input-password-error-required":"Mot de passe obligatoire"
+}

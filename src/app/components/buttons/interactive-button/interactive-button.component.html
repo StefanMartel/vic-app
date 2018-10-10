@@ -1,0 +1,19 @@
+<button [disabled]="disabled" [class.error]="state == 'error'" [class.success]="state == 'success'" type="{{ type }}" [@container]="state">
+
+    <div class="state-initial" *ngIf="state == 'initial' || state.length === 0" [@initial]="state">
+        <span class="label">{{ label }}</span>
+    </div>
+
+    <div class="state-pending" *ngIf="state == 'pending'" [@pending]="state">
+        <vic-loading></vic-loading>
+    </div>
+
+    <div class="state-error" *ngIf="state == 'error'" [@error]="state">
+        <span class="label">{{ errorLabel }}</span>
+    </div>
+
+    <div class="state-success" *ngIf="state == 'success'" [@success]="state">
+        <span class="label">{{ successLabel }}</span>
+    </div>
+
+</button>

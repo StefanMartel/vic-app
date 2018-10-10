@@ -1,0 +1,63 @@
+@import "../../../assets/styles/global-styles.scss";
+
+@keyframes bounce {
+
+    0% {
+        transform: translateY(8px);
+    }
+
+    30% {
+        transform: translateY(-8px);
+    }
+
+    60% {
+        transform: translateY(8px);
+    }
+
+    100% {
+        transform: translateY(8px);
+    }
+
+}
+
+$ball-size : 5px;
+$bounce-duration: 1300ms;
+$bounce-delay : $bounce-duration / 3;
+
+
+
+.state-pending {
+
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+    height: $ball-size;
+    line-height: 0;
+    text-align: center;
+
+    span {
+        display: inline-block;
+        margin: 0 4px;
+        width: $ball-size;
+        height: $ball-size;
+        border-radius: 50%;
+        background-color: $button-text-color;
+        vertical-align: middle;
+        line-height: $ball-size;
+        transform: translateY(8px);
+
+        animation: bounce $bounce-duration cubic-bezier(.57,0,.44,1) infinite;
+
+        @for $i from 1 through 3 {
+
+            &:nth-child( #{$i} ) {
+                animation-delay: 100ms * $i;
+            }
+
+        }
+
+    }
+
+}

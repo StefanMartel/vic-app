@@ -1,0 +1,25 @@
+<form *ngIf="loginForm" (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+    <div class="div-form">
+        <input type="text"
+               id="login-input"
+               placeholder="{{ (!login.valid && login.touched) ? ('login-input-name-error-required' | translate) : ('login-input-name' | translate) }}"
+               formControlName="login"
+               [class.error]="!login.valid && login.touched"
+        />
+    </div>
+    <div class="div-form">
+        <input type="password"
+               id="password-input"
+               placeholder="{{ (!password.valid && password.touched) ? ('login-input-password-error-required' | translate) : ('login-input-password' | translate) }}"
+               formControlName="password"
+               [class.error]="!password.valid && password.touched"
+        />
+    </div>
+
+    <vic-interactive-button [state]="loginInProgress"
+                            [label]="'login-button-submit' | translate"
+                            [errorLabel]="'login-button-submit-error' | translate"
+                            [successLabel]="'login-button-submit-valid' | translate"
+                            [disabled]="!loginForm.valid">
+    </vic-interactive-button>
+</form>

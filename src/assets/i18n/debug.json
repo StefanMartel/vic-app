@@ -1,0 +1,9 @@
+{
+  "login-input-name": "login-input-name",
+  "login-input-password": "login-input-password",
+  "login-button-submit": "login-button-submit",
+  "login-button-submit-error": "login-button-submit-error",
+  "login-button-submit-valid": "login-button-submit-valid",
+  "login-input-name-error-required":"login-input-name-error-required",
+  "login-input-password-error-required":"login-input-password-error-required"
+}

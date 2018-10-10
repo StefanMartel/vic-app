@@ -1,0 +1,9 @@
+{
+  "login-input-name": "Name",
+  "login-input-password": "Password",
+  "login-button-submit": "Submit",
+  "login-button-submit-error": "Bad credentials",
+  "login-button-submit-valid": "logged in",
+  "login-input-name-error-required":"Name required",
+  "login-input-password-error-required":"Password required"
+}
